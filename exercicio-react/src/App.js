@@ -1,10 +1,8 @@
+import React from "react";
 import './App.css';
+import CardVideo from './Componentes/CardVideo';
 
 function App() {
-  const titulo = "Título do vídeo"
-  function reproduzVideo() {
-    alert("O vídeo está sendo reproduzido")
-}
   return (
     <div>
       <div className="tela-inteira">
@@ -27,38 +25,7 @@ function App() {
           </nav>
 
           <section className="painel-de-videos">
-            <div className="box-pagina-principal media1">
-              <img onClick={reproduzVideo} src="https://picsum.photos/400/400?a=1 " alt=""></img>
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal media2">
-              <img onClick={reproduzVideo} src="https://picsum.photos/400/400?a=2 " alt=""></img>
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal media3">
-              <img onClick={reproduzVideo} src="https://picsum.photos/400/400?a=3 " alt=""></img>
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal media4">
-              <img onClick={reproduzVideo} src="https://picsum.photos/400/400?a=4 " alt=""></img>
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal media5">
-              <img onClick={reproduzVideo} src="https://picsum.photos/400/400?a=5 " alt=""></img>
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal media6">
-              <img onClick={reproduzVideo} src="https://picsum.photos/400/400?a=6 " alt=""></img>
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal media7">
-              <img onClick={reproduzVideo} src="https://picsum.photos/400/400?a=7 " alt=""></img>
-              <h4>{titulo}</h4>
-            </div>
-            <div className="box-pagina-principal media8">
-              <img onClick={reproduzVideo} src="https://picsum.photos/400/400?a=8 " alt=""></img>
-              <h4>{titulo}</h4>
-            </div>
+            <CardVideo/>
           </section>
         </main>
 
@@ -68,6 +35,5 @@ function App() {
       </div>
     </div>
   );
-}
-
+  }
 export default App;
